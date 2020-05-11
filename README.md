@@ -9,7 +9,7 @@ Tiktok React Native
 <p align="center">Watch on <a href="https://www.youtube.com/watch?v=1oi83QsTG90">Youtube</a></p>
 
 <div align="center">
-   <a href="https://www.youtube.com/watch?v=UTfGq8iaSEQ&t">
+   <a href="https://www.youtube.com/watch?v=1oi83QsTG90">
    <img align="center" src="/assets/app.gif" width="230px">
    </a>
 
