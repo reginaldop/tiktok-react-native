@@ -4,7 +4,7 @@ import { Video } from 'expo-av'
 
 import styled from 'styled-components/native'
 
-const Hero = styled(Video)`
+const Play = styled(Video)`
 	height: 100%;
 `
 const Poster = styled.ImageBackground`
@@ -13,7 +13,7 @@ const Poster = styled.ImageBackground`
 
 const VideoPlayer = ({ video, poster, isPlay }) => {
 	return isPlay ? (
-		<Hero
+		<Play
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}

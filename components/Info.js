@@ -13,7 +13,6 @@ const User = styled.View`
 	flex-direction: row;
 	align-items: center;
 `
-
 const UserName = styled.Text`
 	font-size: 17px;
 	color: rgba(255, 255, 255, 1);

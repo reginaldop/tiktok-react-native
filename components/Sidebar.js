@@ -9,7 +9,7 @@ const Container = styled.View`
 	justify-content: flex-end;
 `
 const Menu = styled.View`
-	margin: 9px 0 9px 0;
+	margin: 9px 0;
 	align-items: center;
 `
 const User = styled.View`
@@ -32,9 +32,8 @@ const Count = styled.Text`
 	font-size: 12px;
 	letter-spacing: -0.1px;
 `
-
 const SoundBg = styled.View`
-	background: #1b191f;
+	background: #1f191f;
 	width: 50px;
 	height: 50px;
 	border-radius: 50px;
@@ -56,10 +55,12 @@ const Sidebar = ({ avatar, count }) => {
 					<Avatar resizeMode='cover' source={avatar} />
 				</User>
 			</Menu>
+
 			<Menu>
 				<Icon resizeMode='contain' source={require('../assets/icons/like.png')} />
 				<Count>{count.like}</Count>
 			</Menu>
+
 			<Menu>
 				<Icon
 					resizeMode='contain'
@@ -67,10 +68,12 @@ const Sidebar = ({ avatar, count }) => {
 				/>
 				<Count>{count.comment}</Count>
 			</Menu>
+
 			<Menu>
 				<Icon resizeMode='contain' source={require('../assets/icons/share.png')} />
 				<Count>{count.share}</Count>
 			</Menu>
+
 			<Menu>
 				<SoundBg>
 					<Sound resizeMode='cover' source={avatar} />

@@ -1,15 +1,15 @@
 {
 	"expo": {
-		"name": "Netflix",
-		"slug": "Netflix",
+		"name": "Tiktok",
+		"slug": "Tiktok",
 		"platforms": ["ios", "android", "web"],
 		"version": "1.0.0",
 		"orientation": "portrait",
 		"icon": "./assets/icon.png",
 		"splash": {
-			"image": "./assets/splash.png",
+			"image": "./assets/splash-tiktok.png",
 			"resizeMode": "cover",
-			"backgroundColor": "#FFF"
+			"backgroundColor": "#170c1a"
 		},
 		"updates": {
 			"fallbackToCacheTimeout": 0

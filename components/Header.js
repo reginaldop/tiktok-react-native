@@ -11,16 +11,14 @@ const Container = styled.View`
 	position: absolute;
 	z-index: 1;
 `
-
 const Menu = styled.Text`
 	color: #fff;
-	font-weight: ${props => (props.bold ? '500' : 'normal')};
-	opacity: ${props => (props.bold ? 1 : 0.8)};
 	letter-spacing: 0.8px;
 	margin: 11px 12px;
+	font-weight: ${props => (props.bold ? 'bold' : 'normal')};
+	opacity: ${props => (props.bold ? 1 : 0.8)};
 	font-size: ${props => (props.bold ? '16px' : '15px')};
 `
-
 const Separator = styled.View`
 	width: 1px;
 	height: 13px;

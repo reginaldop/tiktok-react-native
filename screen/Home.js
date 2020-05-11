@@ -4,14 +4,14 @@ import { StatusBar } from 'react-native'
 
 import styled from 'styled-components/native'
 
-const Container = styled.View`
-	flex: 1;
-	background-color: transparent;
-`
-
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Tabs from '../components/Tabs'
+
+const Container = styled.View`
+	flex: 1;
+	background: transparent;
+`
 
 import api from '../services/api'
 

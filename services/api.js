@@ -12,7 +12,7 @@ const api = [
 		count: {
 			like: '1.1M',
 			comment: '4080',
-			share: 2800
+			share: '2800'
 		}
 	},
 	{
@@ -29,7 +29,7 @@ const api = [
 		count: {
 			like: '380K',
 			comment: '2388',
-			share: 535
+			share: '535'
 		}
 	}
 ]

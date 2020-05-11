@@ -8,17 +8,15 @@ import styled from 'styled-components/native'
 
 import ViewPager from '@react-native-community/viewpager'
 
+import VideoPlayer from '../components/VideoPlayer'
 import Info from '../components/Info'
 import Sidebar from '../components/Sidebar'
-import VideoPlayer from '../components/VideoPlayer'
 
-const { width, height } = Dimensions.get('window')
+const { height } = Dimensions.get('window')
 
 const Container = styled(ViewPager)`
 	height: ${height}px;
-	/**position: relative;**/
 `
-
 const Gradient = styled(LinearGradient)`
 	height: 100%;
 	justify-content: space-between;
@@ -35,6 +33,7 @@ const Center = styled.View`
 
 const Hero = ({ videos }) => {
 	const [selected, setSelected] = useState(0)
+
 	return (
 		<Container
 			orientation='vertical'
@@ -42,13 +41,12 @@ const Hero = ({ videos }) => {
 			initialPage={0}>
 			{videos.map((item, index) => {
 				return (
-					<View key={item.id}>
+					<View key={index}>
 						<VideoPlayer
 							video={item.video}
 							poster={item.poster}
 							isPlay={selected === index}
 						/>
-
 						<Gradient
 							locations={[0, 0.26, 0.6, 1]}
 							colors={[
